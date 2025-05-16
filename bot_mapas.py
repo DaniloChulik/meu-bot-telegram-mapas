@@ -59,9 +59,11 @@ estado_para_sigla = {
 }
 
 mensagens_seguranca = [
-    "🚗 Use sempre o cinto de segurança.", "🚧 Mantenha distância segura do veículo à frente enquanto.
-
-**Aqui está o código corrigido, focado em usar as chaves embutidas:**
+    "🚗 Use sempre o cinto de segurança.", # OK
+    "🚧 Mantenha distância segura do veículo à frente.", # OK (se for essa a frase completa)
+    "📵 Celular e direção não combinam.", # OK
+    # ... continue verificando todas as outras ...
+]
 
 ```python
 # ==============================================================================
