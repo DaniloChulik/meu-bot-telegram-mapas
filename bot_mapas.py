@@ -120,7 +120,12 @@ if not TOKEN_TELEGRAM_DIRETO or TOKEN_TELEGRAM_DIRETO == "SEU_TOKEN_PLACEHOLDER_
     "🗣️ Avise manobras com antecedência.", "🚯 Não jogue lixo nas estradas.",
     "🎯 Foco total no volante.", "🚦 Trânsito seguro depende de todos.",
     "✅ Faça sua parte pela segurança no trânsito.", "📢 Compartilhe boas práticas no trânsito."
-]
+mensagens_seguranca = [
+    "🚗 Use sempre o cinto de segurança.", "🚧 Mantenha distância segura do veículo à frente.",
+    # ... muitas outras mensagens ...
+    "✅ Faça sua parte pela segurança no trânsito.", "📢 Compartilhe boas práticas no trânsito."
+] # <--- ESTE É O COLCHETE DE FECHAMENTO DA LISTA
+# A LINHA 123 NO SEU ARQUIVO PROVAVELMENTE ESTÁ PERTO DAQUI
 
 # ==============================================================================
 # 3. DEFINIÇÕES DE FUNÇÕES AUXILIARES
