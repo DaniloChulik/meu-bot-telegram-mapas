@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: minha-aplicacao-web
+    env: python # ou node, ruby, etc.
+    rootDir: ./pasta_da_app_web # Opcional
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.16 # Exemplo
+      - key: MINHA_OUTRA_VARIAVEL
+        value: valor_secreto_aqui # Melhor usar secrets do Render
+    plan: free # ou o plano desejado
+  - type: worker # Para o bot do Telegram
+    name: meu-telegram-bot
+    env: python # ou node
+    rootDir: ./pasta_do_bot # Opcional
+    buildCommand: "pip install -r requirements.txt" # Assumindo que tem seu próprio requirements
+    startCommand: "python bot.py"
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        fromSecret: true # Se você armazenar o token como um "Secret File" ou "Secret Group"
+        # OU para colar direto (menos seguro para tokens, mas funciona):
+        # value: SEU_TOKEN_AQUI_MAS_NAO_RECOMENDADO_NO_YAML_DIRETO
+      - key: PYTHON_VERSION
+        value: 3.9.16
+    plan: free # ou o plano desejado
