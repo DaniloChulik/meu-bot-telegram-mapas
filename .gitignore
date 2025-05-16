@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+.env  # MUITO IMPORTANTE! Não envie suas chaves para o GitHub!
+*.sqlite3
+*.log
