@@ -162,7 +162,7 @@ mensagens_seguranca = [
     "📵 Celular e direção não combinam.", "⚠️ Respeite os limites de velocidade.",
     "🛑 Pare sempre na faixa de pedestres.", "🚦 Sinal vermelho significa pare!",
     "🔍 Faça revisões periódicas no seu veículo.", "🌧️ Em dias de chuva, reduza a velocidade.",
-    "🕒 Respeite o tempo=============================================================================
+    "🕒 Respeite o tempo de descanso na direção.",
 
 def traduz_endereco(endereco_original: str) -> str:
     endereco_traduzido = endereco_original
